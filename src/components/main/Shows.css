@@ -1,0 +1,7 @@
+.container{
+  height:100%;
+  background-image: url('../../assets/images/shows.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}

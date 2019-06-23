@@ -1,0 +1,8 @@
+.container{
+  height: 2rem;
+  color: pink;
+  background-color: rgba(97, 37, 37, 0.5);
+  position: fixed;
+  width:100%;
+  z-index: 99;
+}
