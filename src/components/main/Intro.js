@@ -4,11 +4,9 @@ import styles from './Intro.css'
 
 export default function Intro() {
   return (
-
-      <section className={styles.image}>
-
-      </section>
-
- 
+    <container className={styles.container}>
+      <section className={styles.image}> </section>
+      {/* <section className={styles.carousel}></section> */}
+    </container>
   )
 }

@@ -1,10 +1,10 @@
 import React from 'react';
 import styles from './SubSection.css';
 
-export default function SubSection (){
+export default function SubSection({title}){
   return(
     <section className={styles.container}>
-      <h3>SubSection</h3>
+      <h3>{title}</h3>
     </section>
   )
 }

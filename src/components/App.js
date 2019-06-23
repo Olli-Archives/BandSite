@@ -11,11 +11,11 @@ export default function App() {
     <section style={{heigth:'100%'}}>
       <NavBar/>
       <Intro/>
-      <SubSection/>
+      <SubSection title='UPCOMNIG SHOWS'/>
       <Shows/>
-      <SubSection/>
+      {/* <SubSection/> */}
       <Intro/>
-      <SubSection/>
+      {/* <SubSection/> */}
     </section>
   );
 }
