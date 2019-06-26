@@ -5,7 +5,19 @@ import styles from './NavBar.css';
 export default function NavBar() {
   return (
     <>
-      <section className={styles.container}>hi</section>
+      <header className={styles.container}>
+        <section className={styles.links}>
+          <a>ABOUT-US</a>
+          <a>HOME</a>
+          <a>SOUND-CLOUD</a>
+        </section>
+        <section className={styles.spacer}>
+
+        </section>
+        <section className={styles.social}>
+          <a>INSTA</a>
+        </section>
+      </header>
     </>
   );
 }

@@ -3,7 +3,7 @@ import styles from './Shows.css'
 import { shows } from '../../data/shows';
 
 export default function Shows() {
-  const showList = shows.map(show => {
+  const showList = shows.map((show,i )=> {
     const {
       title,
       location,
@@ -12,7 +12,7 @@ export default function Shows() {
       details
     } = show;
     return (
-      <li>
+      <li key={i}>
         <ul>
           <li>Where: {location}</li>
           <li>When: {date} @ {time}</li>

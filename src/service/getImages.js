@@ -6,4 +6,4 @@ export function getImages(){
    return apiFetch(path, 'GET')
     .then(pics=>pics);
 
-}
+} 

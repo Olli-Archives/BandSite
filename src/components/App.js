@@ -14,9 +14,9 @@ export default function App() {
       <Intro/>
       <SubSection title='UPCOMNIG SHOWS'/>
       <Shows/>
-      <SubSection title = 'STUFF AND THINGS'/>
+      <SubSection title = 'STUFF AN THINGS'/>
       <InstaGallery offsetArray ={[1,2]}/>
-      {/* <SubSection/> */}
+      <SubSection/>
     </section>
   );
 }

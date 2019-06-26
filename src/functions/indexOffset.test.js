@@ -23,12 +23,19 @@ describe('test indexOffset function', ()=>{
     const updatedIndex = indexOffset(array, offset, index);
     expect(updatedIndex).toEqual(0);
   })
-  it('at start of array, offst of 1 will get next index', ()=>{
-    const array = ['1','2','3'];
+  it('at start of array, offset of 1 will get next index', ()=>{
+    const array = ['1','2'];
     const offset = +1;
     const index = 0;
     const updatedIndex = indexOffset(array, offset, index);
     expect(updatedIndex).toEqual(1);
+  })
+  it('at end of array, offset of 1 will get first index', ()=>{
+    const array = ['1','2'];
+    const offset = +1;
+    const index = 1;
+    const updatedIndex = indexOffset(array, offset, index);
+    expect(updatedIndex).toEqual(0);
   })
 
 })

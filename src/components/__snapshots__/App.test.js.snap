@@ -15,8 +15,16 @@ exports[`App component renders App 1`] = `
   />
   <Shows />
   <SubSection
-    title="STUFF AND THINGS"
+    title="STUFF AN THINGS"
   />
-  <StuffAndThings />
+  <StuffAndThings
+    offsetArray={
+      Array [
+        1,
+        2,
+      ]
+    }
+  />
+  <SubSection />
 </section>
 `;

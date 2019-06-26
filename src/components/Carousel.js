@@ -1,23 +1,22 @@
 import React from 'react';
+import indexOffset from '../functions/indexOffset';
 
-export default function Carousel(offsetArray, imgArray){
-  const images = imgArray[0].images;
-  console.log('images aray in Carousel', images);
+export  function Carousel({offsetArray, imgArray, index}){
 
-  const imgWindows = offsetArray.map(offset=>{
-    const smallImg = imgArray[offset].images.standard_resolution;
-    const key = imgArray[offset].id;
-    console.log('smallImg', smallImg);
-    
+  const imgWindows = offsetArray.map((offset, i)=>{
+
+
+    const smallImg = imgArray[0].images[indexOffset(imgArray[0].images, offset, index)].images.thumbnail.url;
+     
     return(
-      <li key={key}>
-        //need to feed small img to src
-        <img src={}></img>
+      <li key={i}>
+       
+        <img src={smallImg}></img>
       </li>
     )
   })
   return (
-    <ul>
+    <ul style = {{display:'flex'}}>
       {imgWindows}
     </ul>
   )
@@ -26,6 +25,3 @@ export default function Carousel(offsetArray, imgArray){
 
 }
 
-const imgWindows = this.props.offsetArray.map(offset=>{
-  return (<li style={{width:'30 vw', overflow:'hidden', height:'25vh'}}>
-    <img src={imgArray[indexOffset(imgArray, offset, index)]}></img></li>)
