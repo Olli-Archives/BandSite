@@ -1,5 +1,5 @@
 .container{
-  height:100vh;
+  height: calc(100vh - 4rem);
   background-image: url('../../assets/images/shows.jpg');
   background-size: cover;
   background-repeat: no-repeat;

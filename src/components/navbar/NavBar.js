@@ -1,5 +1,10 @@
 import React from 'react';
 import styles from './NavBar.css';
+import {
+  FaInstagram,
+  FaSoundcloud,
+  FaFacebookSquare
+} from 'react-icons/fa'
 
 
 export default function NavBar() {
@@ -9,13 +14,21 @@ export default function NavBar() {
         <section className={styles.links}>
           <a>ABOUT-US</a>
           <a>HOME</a>
-          <a>SOUND-CLOUD</a>
+
         </section>
         <section className={styles.spacer}>
 
         </section>
         <section className={styles.social}>
-          <a>INSTA</a>
+        <a target='_blank' href='https://www.instagram.com/sepdxcasualencou/'>
+            <FaInstagram />
+          </a>
+          <a>
+            <FaSoundcloud />
+          </a>
+          <a target='_blank' href='https://www.facebook.com/eastsidecasualencounters/'>
+            <FaFacebookSquare />
+          </a>
         </section>
       </header>
     </>
