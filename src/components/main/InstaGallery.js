@@ -45,7 +45,7 @@ componentDidMount (){
 
     return(
       <section className={styles.container}>
-        {imgArray && imgArray[0] && imgArray[0].images? <Carousel offsetArray={[0,1,2,3,0,1,2,3]} imgArray={imgArray} index={index}/> : <h1>loading</h1>}
+        {imgArray && imgArray[0] && imgArray[0].images? <Carousel offsetArray={[0,1,2,3,4,0,1,2,3]} imgArray={imgArray} index={index}/> : <h1>loading</h1>}
       </section>
     )
   }

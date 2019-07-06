@@ -1,0 +1,10 @@
+.li{
+ padding:0;
+ img{
+   padding:0;
+ }
+}
+.ul{
+  list-style: none;
+  display:flex;
+}

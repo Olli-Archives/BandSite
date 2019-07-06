@@ -4,7 +4,7 @@ import NavBar from './navbar/NavBar';
 import Intro from './main/Intro';
 import SubSection from './main/SubSection';
 import Shows from './main/Shows';
-import InstaGallery from './main/InstaGallery';
+import Footer from './footer/Footer';
 
 
 export default function App() {
@@ -14,9 +14,7 @@ export default function App() {
       <Intro/>
       <SubSection title='UPCOMNIG SHOWS'/>
       <Shows/>
-      <SubSection title = 'STUFF AN THINGS'/>
-      <InstaGallery offsetArray ={[1,2]}/>
-      <SubSection/>
+      <Footer/>
     </section>
   );
 }

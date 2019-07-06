@@ -1,12 +1,18 @@
 import React from 'react';
 import styles from './Intro.css'
+import InstaGallery from './InstaGallery';
+import image from '../../assets/images/casualencounterlight.png';
 
 
 export default function Intro() {
   return (
-    <section className={styles.container}>
-      <section className={styles.image}> </section>
-      {/* <section className={styles.carousel}></section> */}
-    </section>
+    <main className={styles.main}>
+      <section className={styles.imgContainer}>
+        <img className={styles.img} src={image}></img>
+      </section>
+      <section>
+        <InstaGallery />
+      </section>
+    </main>
   )
 }
